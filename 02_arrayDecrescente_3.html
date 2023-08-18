@@ -3,12 +3,39 @@
     //Peça para um usuário inserir três números. Crie um array com os três números, colocando-os em ordem decrescente. Para ordenar, NÃO use o método reverse();
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
-    //ENTRADA
+    const numero1 = Number(prompt(`Informe um número:`))
+    const numero2 = Number(prompt(`Informe outro número:`))
+    const numero3 = Number(prompt(`Informe mais um número:`))
 
+    let decrescente = [];
+    let igual = `todos os números são iguais`;
 
-    //PROCESSAMENTO
+    if (numero1 > numero2 && numero2 > numero3) {
+        decrescente = [numero1, numero2, numero3]
+    }
 
+    else if (numero3 > numero2 && numero2 > numero1) {
+        decrescente = [numero3, numero2, numero1]
+    }
 
-    //SAÍDA
+    else if (numero2 > numero1 && numero1 > numero3) {
+        decrescente = [numero2, numero1, numero3]
+    }
+
+    else if (numero3 > numero1 && numero1 > numero2) {
+        decrescente = [numero3, numero1, numero2]
+    }
+
+    else if (numero1 > numero3 && numero3 > numero2) {
+        decrescente = [numero1, numero3, numero2]
+
+    }
+
+    else if (numero2 > numero3 && numero3 > numero1) {
+        decrescente = [numero2, numero3, numero1]
+    }
+
+    alert(decrescente.join(`-`));
+
 
 </script>

@@ -7,6 +7,16 @@
 
     //ENTRADA
 
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const remover = prompt(`qual carro você deseja remover: ${carrosSUV.join(", ")}`);
+
+    const posicao = carrosSUV.indexOf(remover);
+
+    alert (`a lista antiga possui: ${carrosSUV.join(", ")}`)
+    
+    carrosSUV.splice(posicao, 1);
+
+    alert (`a nova lista possui: ${carrosSUV.join(", ")}`)
 
     //PROCESSAMENTO
 

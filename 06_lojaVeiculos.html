@@ -4,17 +4,61 @@
     // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
     // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     // let carrosHatch = ["308", "Focus", "i30"];
-    
     //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
 
     //Apresente a lista final de cada tipo de veículo.
 
-    //ENTRADA
 
 
-    //PROCESSAMENTO
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+
+    const adicionar = prompt(`Informe 1 veículo que você deseja adicionar à lista`);
+    const tipo = prompt(`Qual o tipo do carro 1 ${adicionar}?`);
+    const adicionar2 = prompt(`Informe outro que você deseja adicionar à lista`);
+    const tipo2 = prompt(`Informe o tipo do carro 2 ${adicionar2}:`);
+    const adicionar3 = prompt(`Informe mais um veículo que você deseja adicionar à lista`);
+    const tipo3 = prompt(`Informe o tipo do carro 1 ${adicionar3}`)
+
+    if (tipo == "suv") {
+        carrosSUV.push(adicionar)
+    }
+    else if (tipo == "sedan") {
+        carrosSedan.push(adicionar)
+    }
+    else if (tipo == "hatch") {
+        carrosHatch.push(adicionar)
+
+    }
+
+    if (tipo2 == "suv") {
+        carrosSUV.push(adicionar2)
+    }
+    else if (tipo2 == "sedan") {
+        carrosSedan.push(adicionar2)
+    }
+    else if (tipo2 == "hatch") {
+        carrosHatch.push(adicionar2)
+
+    }
+
+    if (tipo3 == "suv") {
+        carrosSUV.push(adicionar3)
+    }
+    else if (tipo3 == "sedan") {
+        carrosSedan.push(adicionar3)
+    }
+    else if (tipo3 == "hatch") {
+        carrosHatch.push(adicionar3)
+
+    }
 
 
-    //SAÍDA
+    alert(`A lista de SUVs é ${carrosSUV.join(",")}`)
+    alert(`A lista de Sedans é ${carrosSedan.join(",")}`)
+    alert(`A lista de Hatches ${carrosHatch.join(",")}`)
+
+
 
 </script>
